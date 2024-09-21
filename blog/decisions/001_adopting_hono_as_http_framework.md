@@ -1,4 +1,4 @@
-## Decision Record
+## Adopting Hono JS as the HTTP Framework
 
 **Author:** Alejandro Barrera Aponte <abarreraaponte@icloud.com>
 **Date:** 2024-09-19

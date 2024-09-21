@@ -4,25 +4,36 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "KitLedger",
   description: "A framework to simplify the creation of transactional systems",
+  
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+		{ text: 'Home', link: '/' },
+		{ text: 'Guide', link: '/docs/guide' }
     ],
 
     sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+		{
+			text: 'Docs',
+			items: [
+			{ text: 'Guide', link: '/docs/guide' }
+			]
+		},
+		{
+			text: 'Blog',
+			items: [
+			{ text: 'Changelog', link: '/blog/changelog' },
+			{ text: 'Decisions', link: '/blog/decisions' },
+			]
+		}
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      	{ icon: 'github', link: 'https://github.com/kitledger/kitledger' }
+    ],
+
+	search: {
+		provider: 'local'
+	}
   }
 })

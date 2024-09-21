@@ -1,8 +1,8 @@
-## Decision Record
+## Use Decimal Data Type for Precise Monetary Calculations
 
 **Author:** Alejandro Barrera Aponte <abarreraaponte@icloud.com>
 **Date:** 2024-09-19
-**Title:** Use Decimal Data Type for Precise Monetary Calculations (Decision #3)
+**Title:** Use Decimal Data Type for Precise Monetary Calculations
 
 ### Summary:
 

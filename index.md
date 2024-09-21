@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: "KitLedger"
-  text: "A framework to simplify the creation of transactional systems"
-  tagline: My great project tagline
+  name: "(Coming Soon)"
+  text: "Framework for building transactional software"
+  tagline: A solid foundation based on double-entry accounting principles.
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get Started
+      link: /docs
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Blog
+      link: /blog
 
 features:
   - title: Feature A
