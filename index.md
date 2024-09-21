@@ -18,11 +18,20 @@ hero:
       link: /blog
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 📒
+    title: Consistent
+    details: Our base design ensures that inconsistent ledger operations are not allowed.
+    link: /docs
+    linkText: Learn more
+  - icon: 🔌
+    title: Easy Integration
+    details: Dynamic REST API that evolves as you define entity types and transaction types.
+    link: /docs
+    linkText: Learn more
+  - icon: 🚀
+    title: Simple Deployment
+    details: Install with a single command, in the Cloud or On-Premises
+    link: /docs
+    linkText: Learn more
 ---
 
