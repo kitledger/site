@@ -6,6 +6,9 @@ hero:
   name: "(Coming Soon)"
   text: "Framework for building transactional software"
   tagline: A solid foundation based on double-entry accounting principles.
+  image:
+    src: /brand/vector/default.svg
+    alt: KitLedger
   actions:
     - theme: brand
       text: Get Started
