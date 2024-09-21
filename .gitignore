@@ -1,0 +1,8 @@
+# IDEs
+*.code-workspace
+
+# MacOS
+.DS_Store
+
+# Vitepress Dist
+.vitepress/dist
