@@ -12,13 +12,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /docs
+      link: /docs/guide/getting-started
     - theme: alt
       text: Why
       link: /docs/why
-    - theme: alt
-      text: Github
-      link: https://github.com/kitledger/kitledger
 
 features:
   - icon: 📒

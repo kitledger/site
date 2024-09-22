@@ -15,7 +15,8 @@ export default defineConfig({
 			{
 				text: 'Resources',
 				items: [
-					{ text: 'Discussions', link: 'https://github.com/kitledger/kitledger/discussions' }
+					{ text: 'Discussions', link: 'https://github.com/kitledger/kitledger/discussions' },
+					{ text: 'GitHub', link: 'https://github.com/kitledger/kitledger' },
 				]
 			},
 			{
