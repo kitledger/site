@@ -27,40 +27,24 @@ export default defineConfig({
 			}
 		],
 
-		sidebar: {
-			'/docs/': [
-				{
-					text: 'Why KitLedger',
-					link: '/docs/why',
-				},
-				{
-					text: 'Concepts',
-					collapsed: false,
-					items: [
-						{ text: 'Accounts', link: '/docs/guide/concepts/accounts' },
-						{ text: 'Batches', link: '/docs/guide/concepts/batches' },
-						{ text: 'Entities', link: '/docs/guide/concepts/entities' },
-						{ text: 'Ledgers', link: '/docs/guide/concepts/ledgers' },
-						{ text: 'Transactions', link: '/docs/guide/concepts/transactions' },
-						{ text: 'Units', link: '/docs/guide/concepts/units' },
-					]
-				},
-				{
-					text: 'Getting Started',
-					link: '/docs/guide/getting-started',
-				},
-			],
-			'/blog/': [
-				{
-					text: 'Blog',
-					items: [
-						{ text: 'Changelog', link: '/blog/changelog' },
-						{ text: 'Decisions', link: '/blog/decisions' },
-						{ text: 'News', link: '/blog/news' },
-					]
-				}
-			],
-		},
+		sidebar: [
+			{
+				text: 'Getting Started',
+				link: '/guide/getting-started',
+			},
+			{
+				text: 'Overview',
+				collapsed: false,
+				items: [
+					{ text: 'Accounts', link: '/guide/overview/accounts' },
+					{ text: 'Batches', link: '/guide/overview/batches' },
+					{ text: 'Entities', link: '/guide/overview/entities' },
+					{ text: 'Ledgers', link: '/guide/overview/ledgers' },
+					{ text: 'Transactions', link: '/guide/overview/transactions' },
+					{ text: 'Units', link: '/guide/overview/units' },
+				]
+			},
+		],
 
 		socialLinks: [
 			{ icon: 'github', link: 'https://github.com/kitledger/kitledger' }
