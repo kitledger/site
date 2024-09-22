@@ -14,8 +14,11 @@ hero:
       text: Get Started
       link: /docs
     - theme: alt
-      text: Blog
-      link: /blog
+      text: Why
+      link: /docs/why
+    - theme: alt
+      text: Github
+      link: https://github.com/kitledger/kitledger
 
 features:
   - icon: 📒
