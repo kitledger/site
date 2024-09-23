@@ -1,9 +1,9 @@
-openapi: 3.0.0
+openapi: 3.1.0
 info:
   title: openapi
   version: 1.0.0
 paths:
-  '{{server_url}}/api/accounts':
+  '/api/accounts':
     post:
       summary: Create an Account
       operationId: Create an Account
@@ -15,7 +15,7 @@ paths:
           description: ''
       requestBody:
         $ref: '#/components/requestBodies/create_an_account'
-  '{{server_url}}/api/currencies':
+  '/api/currencies':
     post:
       summary: Create Currency
       operationId: Create Currency
@@ -27,7 +27,7 @@ paths:
           description: ''
       requestBody:
         $ref: '#/components/requestBodies/create_currency'
-  '{{server_url}}/api/ledgers':
+  '/api/ledgers':
     post:
       summary: Create a Ledger
       operationId: Create a Ledger
@@ -39,7 +39,7 @@ paths:
           description: ''
       requestBody:
         $ref: '#/components/requestBodies/create_a_ledger'
-  '{{server_url}}/health':
+  '/health':
     get:
       summary: Health Check
       operationId: Health Check
@@ -49,7 +49,11 @@ paths:
       responses:
         '200':
           description: ''
-servers: []
+servers: 
+  - url: "{{server_url}}"
+    description: KitLedger's server URL van vary depending on the deployment method, such as Cloud or Self Hosted. Please consult with your IT administrator or the KitLedger team to find your URL.
+security:
+  - {}
 components:
   schemas:
     create_an_account:
@@ -92,6 +96,7 @@ components:
       properties:
         name:
           type: string
+          description: 'Ledger name'
         ref_id:
           type: string
         description:
