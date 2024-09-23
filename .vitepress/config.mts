@@ -12,6 +12,7 @@ export default defineConfig({
 		nav: [
 			{ text: 'Home', link: '/' },
 			{ text: 'Guide', link: '/guide/getting-started' },
+			{ text: 'API Reference', link: 'https://documenter.getpostman.com/view/6191973/2sAXqv4fcj' },
 			{
 				text: 'Resources',
 				items: [
@@ -44,6 +45,10 @@ export default defineConfig({
 					{ text: 'Units', link: '/guide/overview/units' },
 				]
 			},
+			{
+				text: 'API Reference',
+				link: 'https://documenter.getpostman.com/view/6191973/2sAXqv4fcj',
+			}
 		],
 
 		socialLinks: [
