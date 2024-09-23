@@ -6,3 +6,6 @@
 
 # Vitepress Dist
 .vitepress/dist
+
+#Dependencies
+node_modules

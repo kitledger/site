@@ -3,16 +3,6 @@ info:
   title: openapi
   version: 1.0.0
 paths:
-  '{{server_url}}/health':
-    get:
-      summary: Health Check
-      operationId: Health Check
-      description: ''
-      tags:
-        - ''
-      responses:
-        '200':
-          description: ''
   '{{server_url}}/api/accounts':
     post:
       summary: Create an Account
@@ -25,18 +15,6 @@ paths:
           description: ''
       requestBody:
         $ref: '#/components/requestBodies/create_an_account'
-  '{{server_url}}/api/ledgers':
-    post:
-      summary: Create a Ledger
-      operationId: Create a Ledger
-      description: ''
-      tags:
-        - ''
-      responses:
-        '200':
-          description: ''
-      requestBody:
-        $ref: '#/components/requestBodies/create_a_ledger'
   '{{server_url}}/api/currencies':
     post:
       summary: Create Currency
@@ -49,6 +27,28 @@ paths:
           description: ''
       requestBody:
         $ref: '#/components/requestBodies/create_currency'
+  '{{server_url}}/api/ledgers':
+    post:
+      summary: Create a Ledger
+      operationId: Create a Ledger
+      description: ''
+      tags:
+        - ''
+      responses:
+        '200':
+          description: ''
+      requestBody:
+        $ref: '#/components/requestBodies/create_a_ledger'
+  '{{server_url}}/health':
+    get:
+      summary: Health Check
+      operationId: Health Check
+      description: ''
+      tags:
+        - ''
+      responses:
+        '200':
+          description: ''
 servers: []
 components:
   schemas:
@@ -72,17 +72,6 @@ components:
           properties:
             description:
               type: string
-    create_a_ledger:
-      type: object
-      properties:
-        name:
-          type: string
-        ref_id:
-          type: string
-        description:
-          type: string
-        currency_id:
-          type: string
     create_currency:
       type: object
       properties:
@@ -98,6 +87,17 @@ components:
           type: string
         thousands_separator:
           type: string
+    create_a_ledger:
+      type: object
+      properties:
+        name:
+          type: string
+        ref_id:
+          type: string
+        description:
+          type: string
+        currency_id:
+          type: string
   requestBodies:
     create_an_account:
       content:
@@ -106,18 +106,18 @@ components:
             $ref: '#/components/schemas/create_an_account'
       description: ''
       required: true
-    create_a_ledger:
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/create_a_ledger'
-      description: ''
-      required: true
     create_currency:
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/create_currency'
+      description: ''
+      required: true
+    create_a_ledger:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/create_a_ledger'
       description: ''
       required: true
   securitySchemes: {}
