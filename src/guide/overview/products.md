@@ -7,8 +7,8 @@ The "Product" object is a special kind of entity that is meant to represent the 
 ## In Entries
 All entries contain a "product_id" property that links the operation with a given product. Entries also contain a "quantity" whose value is zero by default. 
 
-[!NOTE]
-For additional details on how these fields behave, please see the "Entries" section.
+> [!NOTE]
+> For additional details on how these fields behave, please see the "Entries" section.
 
 When the quantity in an entry is greater than zero, the product_id property becomes mandatory as a quantity movement must be related to a product in order to avoid inconsistencies.
 
