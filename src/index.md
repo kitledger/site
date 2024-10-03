@@ -7,7 +7,7 @@ hero:
   text: "Framework for transactional software"
   tagline: A solid foundation based on double-entry accounting principles.
   image:
-    src: /brand/icon-simple.svg
+    src: /brand/hero.png
     alt: KitLedger
   actions:
     - theme: brand
