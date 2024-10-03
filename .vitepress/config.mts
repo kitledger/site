@@ -3,11 +3,12 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
 	srcDir: './src',
-	head: [['link', { rel: 'icon', href: '/brand/default.png' }]],
+	head: [['link', { rel: 'icon', href: '/brand/icon.svg' }]],
 	title: "KitLedger",
 	description: "A framework to simplify the creation of transactional systems",
 	
 	themeConfig: {
+		logo: '/brand/icon-simple.svg',
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
 			{ text: 'Home', link: '/' },

@@ -3,11 +3,11 @@
 layout: home
 
 hero:
-  name: "(Coming Soon)"
-  text: "Framework for building transactional software"
+  name: "Kitledger"
+  text: "Framework for transactional software"
   tagline: A solid foundation based on double-entry accounting principles.
   image:
-    src: /brand/vector/default.svg
+    src: /brand/icon-simple.svg
     alt: KitLedger
   actions:
     - theme: brand
@@ -34,8 +34,6 @@ features:
     link: /docs
     linkText: Learn more
 ---
-
-# What can be, unburdened by what has been
 
 ## Key Benefits:
 
