@@ -5,10 +5,9 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
-	"redoc:build": "redocly build-docs openapi.yaml --output=./src/public/api-reference.html --config=redocly.yaml"	
+    "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@redocly/cli": "^1.25.3"
+
   }
 }
