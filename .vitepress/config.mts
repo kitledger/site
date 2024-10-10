@@ -38,6 +38,7 @@ export default defineConfig({
 				text: 'Overview',
 				collapsed: false,
 				items: [
+					{ text: 'Introduction', link: '/guide/overview/introduction' },
 					{ text: 'Accounts', link: '/guide/overview/accounts' },
 					{ text: 'Batches', link: '/guide/overview/batches' },
 					{ text: 'Currencies', link: '/guide/overview/currencies' },
